@@ -1,1 +1,634 @@
-Blank
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sacred Sovereign Rising | Every Man You Know Used to Be a Woman</title>
+  <meta name="description" content="A human restoration movement exploring the three core masculine wounds, their feminine mirrors, and the path back to inner union.">
+  <meta property="og:title" content="Sacred Sovereign Rising">
+  <meta property="og:description" content="Have we been healing trauma from the middle of the sentence? Unlock the Origin Map and begin the 7-minute assessment.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/sacred-sovereign-hero.png">
+  <style>
+    :root {
+      --ink: #071614;
+      --deep: #0b2421;
+      --teal: #0f5b54;
+      --teal-2: #2f8a80;
+      --copper: #c77b39;
+      --amber: #f0b15c;
+      --mist: #dce9e3;
+      --white: #fffdf7;
+      --muted: rgba(255, 253, 247, .76);
+      --line: rgba(255, 253, 247, .16);
+      --shadow: 0 24px 70px rgba(0, 0, 0, .28);
+      --radius: 8px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--white);
+      background: var(--ink);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 20% 0%, rgba(47, 138, 128, .34), transparent 28rem), linear-gradient(180deg, #071614 0%, #10211f 52%, #0a1715 100%);
+      color: var(--white);
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+    body, button, input { font: inherit; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .shell { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(7, 22, 20, .78);
+      border-bottom: 1px solid rgba(255, 253, 247, .12);
+    }
+    .nav-inner {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: .02em;
+    }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(240, 177, 92, .55);
+      display: grid;
+      place-items: center;
+      color: var(--amber);
+      background: rgba(15, 91, 84, .42);
+      border-radius: 50%;
+      font-size: 12px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: rgba(255, 253, 247, .74);
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      border-radius: var(--radius);
+      padding: 13px 18px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--amber), var(--copper));
+      color: #1d1209;
+      box-shadow: 0 16px 34px rgba(199, 123, 57, .25);
+    }
+    .btn-secondary {
+      background: rgba(255, 253, 247, .08);
+      border: 1px solid rgba(255, 253, 247, .22);
+      color: var(--white);
+    }
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 68px);
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(7, 22, 20, .96) 0%, rgba(7, 22, 20, .72) 44%, rgba(7, 22, 20, .18) 78%), linear-gradient(180deg, transparent 66%, #071614 100%), url("assets/sacred-sovereign-hero.png") center right / cover no-repeat;
+      z-index: -2;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 28vh;
+      background: linear-gradient(180deg, transparent, #071614);
+      z-index: -1;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 680px) 1fr;
+      gap: 40px;
+      padding: 70px 0 96px;
+    }
+    .hero-grid > * { min-width: 0; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: .92;
+      font-weight: 700;
+      letter-spacing: 0;
+      max-width: 760px;
+    }
+    .lead {
+      max-width: 660px;
+      font-size: clamp(19px, 2.1vw, 25px);
+      line-height: 1.38;
+      color: rgba(255, 253, 247, .86);
+      margin-bottom: 30px;
+    }
+    .hero-question {
+      color: var(--amber);
+      font-size: clamp(24px, 3vw, 38px);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .fineprint { margin: 14px 0 0; color: rgba(255, 253, 247, .66); font-size: 14px; }
+    .scroll-note {
+      position: absolute;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      color: rgba(255, 253, 247, .62);
+      font-size: 13px;
+    }
+    section { padding: 86px 0; }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .85fr) minmax(280px, .5fr);
+      gap: 36px;
+      align-items: end;
+      margin-bottom: 38px;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 5.2vw, 66px);
+      line-height: 1;
+      margin-bottom: 0;
+      letter-spacing: 0;
+    }
+    .section-copy {
+      color: rgba(255, 253, 247, .74);
+      line-height: 1.58;
+      font-size: 17px;
+    }
+    .band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 253, 247, .035);
+    }
+    .diagnostic {
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(320px, .55fr);
+      gap: 26px;
+      align-items: stretch;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 253, 247, .06);
+      box-shadow: var(--shadow);
+      min-width: 0;
+    }
+    .diagnostic-copy { padding: clamp(24px, 5vw, 50px); }
+    .diagnostic-copy h2 { margin-bottom: 20px; }
+    .diagnostic-copy p { color: rgba(255, 253, 247, .78); line-height: 1.62; font-size: 18px; }
+    .signup {
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(15, 91, 84, .62), rgba(7, 22, 20, .72));
+    }
+    .signup h3 { font-size: 25px; margin-bottom: 10px; }
+    .signup p { color: var(--muted); line-height: 1.5; }
+    .field { display: grid; gap: 10px; margin-top: 18px; }
+    label { font-size: 13px; color: rgba(255, 253, 247, .72); font-weight: 700; }
+    input {
+      width: 100%;
+      min-height: 50px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 253, 247, .22);
+      background: rgba(255, 253, 247, .1);
+      color: var(--white);
+      padding: 0 14px;
+      outline: 0;
+    }
+    input:focus { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(240, 177, 92, .18); }
+    .signup .btn { width: 100%; margin-top: 14px; }
+    .success {
+      display: none;
+      margin-top: 14px;
+      padding: 12px;
+      border: 1px solid rgba(240, 177, 92, .42);
+      border-radius: var(--radius);
+      color: #ffe1ae;
+      background: rgba(240, 177, 92, .08);
+      line-height: 1.4;
+    }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .wound {
+      padding: 24px;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba(255, 253, 247, .15);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 253, 247, .07), rgba(255, 253, 247, .025)), rgba(12, 38, 35, .72);
+      min-width: 0;
+    }
+    .wound strong {
+      color: var(--amber);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .wound h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1.04;
+      margin: 12px 0 16px;
+    }
+    .wound p { color: rgba(255, 253, 247, .74); line-height: 1.5; margin-bottom: 0; }
+    .mirror {
+      color: #12211f;
+      background: linear-gradient(180deg, #eef4ee 0%, #d6e6df 100%);
+    }
+    .mirror h2, .mirror .section-copy { color: #12211f; }
+    .mirror .wound { background: rgba(255, 253, 247, .92); color: #12211f; border-color: rgba(18, 33, 31, .14); }
+    .mirror .wound p { color: rgba(18, 33, 31, .72); }
+    .mirror .wound strong { color: #9c5421; }
+    .tool-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; align-items: stretch; }
+    .tool-primary {
+      padding: clamp(28px, 5vw, 54px);
+      background: linear-gradient(135deg, rgba(15, 91, 84, .86), rgba(7, 22, 20, .9)), radial-gradient(circle at 90% 20%, rgba(240, 177, 92, .28), transparent 20rem);
+    }
+    .tool-list { display: grid; gap: 14px; }
+    .tool-item {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 253, 247, .055);
+    }
+    .tool-item h3, .tool-primary h3 { margin-bottom: 8px; font-size: 24px; }
+    .tool-item p, .tool-primary p { color: var(--muted); line-height: 1.52; margin-bottom: 0; }
+    .timeline { display: grid; gap: 2px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+    .era {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 20px;
+      padding: 22px;
+      background: rgba(255, 253, 247, .055);
+    }
+    .era span { color: var(--amber); font-weight: 800; }
+    .era p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .challenge { display: grid; grid-template-columns: .82fr 1fr; gap: 34px; align-items: center; }
+    .challenge-list { display: grid; gap: 10px; margin: 24px 0; }
+    .day {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 253, 247, .05);
+    }
+    .day b {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(240, 177, 92, .16);
+      color: var(--amber);
+    }
+    .day span { color: rgba(255, 253, 247, .78); }
+    .final {
+      text-align: center;
+      padding: 100px 0 120px;
+      background: linear-gradient(180deg, rgba(7, 22, 20, .2), #071614), radial-gradient(circle at 50% 20%, rgba(199, 123, 57, .2), transparent 34rem);
+    }
+    .final h2 { max-width: 820px; margin: 0 auto 22px; }
+    .final p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+      color: rgba(255, 253, 247, .58);
+      font-size: 13px;
+    }
+    .footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.show { opacity: 1; transform: none; }
+
+    @media (max-width: 820px) {
+      .shell { width: min(100% - 28px, 640px); }
+      .nav-inner { height: 62px; }
+      .nav-links { display: none; }
+      .brand { min-width: 0; }
+      .brand span:last-child { max-width: 122px; line-height: 1.05; }
+      .hero { min-height: auto; }
+      .hero::before {
+        background: linear-gradient(180deg, rgba(7, 22, 20, .88) 0%, rgba(7, 22, 20, .86) 48%, #071614 100%), url("assets/sacred-sovereign-hero.png") center top / cover no-repeat;
+      }
+      .hero-grid { grid-template-columns: 1fr; padding: 56px 0 116px; }
+      h1 {
+        max-width: 340px;
+        font-size: clamp(40px, 12.5vw, 49px);
+        overflow-wrap: break-word;
+      }
+      .hero-question {
+        max-width: 340px;
+        font-size: 25px;
+      }
+      .lead { max-width: 340px; }
+      .lead { font-size: 18px; }
+      .cta-row { display: grid; }
+      .btn { width: 100%; min-height: 50px; white-space: normal; text-align: center; }
+      section { padding: 64px 0; }
+      .section-head, .diagnostic, .cards, .tool-grid, .challenge { grid-template-columns: 1fr; }
+      .section-head > *, .diagnostic > *, .cards > *, .tool-grid > *, .challenge > * { min-width: 0; }
+      .section-head { gap: 18px; margin-bottom: 26px; }
+      h2 {
+        font-size: clamp(34px, 10.6vw, 40px);
+        overflow-wrap: break-word;
+      }
+      .diagnostic-copy h2,
+      .diagnostic-copy p {
+        max-width: 286px;
+      }
+      .wound { min-height: auto; }
+      .era { grid-template-columns: 1fr; gap: 8px; }
+      .scroll-note { bottom: 16px; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="Sacred Sovereign Rising home">
+        <span class="brand-mark" aria-hidden="true">SSR</span>
+        <span>Sacred Sovereign Rising</span>
+      </a>
+      <div class="nav-links">
+        <a href="#wounds">The Wounds</a>
+        <a href="#tools">Tools</a>
+        <a href="#challenge">Challenge</a>
+        <a class="btn btn-primary" href="#origin-map">Unlock the Origin Map</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="shell hero-grid">
+        <div class="reveal show">
+          <h1>Every Man You Know Used to Be a Woman.</h1>
+          <p class="hero-question">Have we been healing trauma from the middle of the sentence?</p>
+          <p class="lead">Sacred Sovereign Rising is a human restoration movement exploring the three core masculine wounds, their feminine mirrors, and the path back to inner union.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#origin-map">Take the 7-minute assessment</a>
+            <a class="btn btn-secondary" href="#wounds">See the wound map</a>
+          </div>
+          <p class="fineprint">All genders welcome. Every polarity belongs in the healing.</p>
+        </div>
+      </div>
+      <div class="scroll-note" aria-hidden="true">Scroll to enter the Origin Map</div>
+    </header>
+
+    <section id="origin-map" class="band">
+      <div class="shell diagnostic">
+        <div class="panel diagnostic-copy reveal">
+          <h2>The Origin Map names what therapy often starts after.</h2>
+          <p>Childhood trauma matters. Ancestral trauma matters. Sacred Sovereign Rising asks whether the deeper rupture began earlier: when the human field split nourishment from strength, intuition from structure, and receiving from power.</p>
+          <p>This free entry gives you the language, the self-assessment, and the first mirrors. It does not give away the full repair protocols. Those belong inside guided practice, community, and initiation.</p>
+        </div>
+        <form class="panel signup reveal" id="signup">
+          <h3>Unlock the Origin Map</h3>
+          <p>Get the wound overview, the 7-minute assessment, the emotional explorer, and the first step into the Shedding the Armor challenge.</p>
+          <div class="field">
+            <label for="name">First name</label>
+            <input id="name" name="name" autocomplete="given-name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Send me the Origin Map</button>
+          <p class="fineprint">No spam. Just the map, the next practice, and invitations when live gates open.</p>
+          <div class="success" id="success" role="status">You are on the path. Connect this form to your email platform next, then send the Origin Map instantly.</div>
+        </form>
+      </div>
+    </section>
+
+    <section id="wounds">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>The three masculine wounds are survival patterns, not character flaws.</h2>
+          <p class="section-copy">They show up in men, women, leaders, parents, lovers, builders, and facilitators because everyone carries masculine and feminine patterning inside the nervous system.</p>
+        </div>
+        <div class="cards">
+          <article class="wound reveal">
+            <div>
+              <strong>Wound 01</strong>
+              <h3>The Empty Nurturer</h3>
+              <p>Worth becomes usefulness. Love turns into labor. Rest feels unsafe unless everyone else has already been fed.</p>
+            </div>
+          </article>
+          <article class="wound reveal">
+            <div>
+              <strong>Wound 02</strong>
+              <h3>The Severed Creator</h3>
+              <p>Creation moves from pressure instead of intuition. Logic outruns body-knowing. Duty replaces desire.</p>
+            </div>
+          </article>
+          <article class="wound reveal">
+            <div>
+              <strong>Wound 03</strong>
+              <h3>The Closed Receiver</h3>
+              <p>Support feels like weakness. Praise cannot land. The nervous system gives and gives, then closes before it can receive.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mirror">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>The feminine mirrors reveal the cost of masculine closure.</h2>
+          <p class="section-copy">The point is not blame. The point is sequence. When the masculine learns to nourish, feel, and receive, the feminine no longer has to overextend, silence, or collapse to survive.</p>
+        </div>
+        <div class="cards">
+          <article class="wound reveal">
+            <div>
+              <strong>Mirror 01</strong>
+              <h3>Over-Extended Caregiver</h3>
+              <p>"I abandon myself to keep the connection alive." Care becomes self-erasure when safety is absent.</p>
+            </div>
+          </article>
+          <article class="wound reveal">
+            <div>
+              <strong>Mirror 02</strong>
+              <h3>Suppressed Muse</h3>
+              <p>"I feel the truth, but I cannot trust my knowing." Creativity and voice go underground.</p>
+            </div>
+          </article>
+          <article class="wound reveal">
+            <div>
+              <strong>Mirror 03</strong>
+              <h3>Boundaryless Lover</h3>
+              <p>"I stay open to survive, not because I feel safe." Intimacy loses discernment and becomes fusion.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>Start with tools that create recognition, not overwhelm.</h2>
+          <p class="section-copy">The free portal should give people enough clarity to recognize their pattern, compare it with someone they trust, and choose the next gate.</p>
+        </div>
+        <div class="tool-grid">
+          <div class="panel tool-primary reveal">
+            <h3>7-Minute Sacred Sovereignty Self-Assessment</h3>
+            <p>Name the pattern that is most active in your system right now: empty giving, severed creation, closed receiving, or one of the feminine mirrors.</p>
+            <div class="cta-row" style="margin-top: 24px;">
+              <a class="btn btn-primary" href="#origin-map">Take the assessment</a>
+            </div>
+          </div>
+          <div class="tool-list">
+            <article class="tool-item reveal">
+              <h3>Emotional Intelligence Explorer</h3>
+              <p>Track what you feel before you fix, perform, collapse, or withdraw.</p>
+            </article>
+            <article class="tool-item reveal">
+              <h3>Holistic Wellness Tracker</h3>
+              <p>Build a private history of rest, energy, connection, expression, and receiving capacity.</p>
+            </article>
+            <article class="tool-item reveal">
+              <h3>Diagnostic Share Loop</h3>
+              <p>Forward your result to someone in the pattern with you and ask: "Which wound feels most active right now?"</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>The historical journey shows how the split became civilization.</h2>
+          <p class="section-copy">After signup, members enter a grounded narrative of agriculture, cities, kings, priests, sky-father control systems, and the political erasure of the earth-rooted feminine.</p>
+        </div>
+        <div class="timeline reveal">
+          <div class="era">
+            <span>Before the shift</span>
+            <p>Land, cycles, community, embodiment, and ecology held masculine and feminine principles together.</p>
+          </div>
+          <div class="era">
+            <span>Agriculture and cities</span>
+            <p>Food storage, land control, hierarchy, and empire made the feminine politically inconvenient.</p>
+          </div>
+          <div class="era">
+            <span>Sky-father systems</span>
+            <p>Kings and priests turned spiritual authority into top-down obedience and called it divine order.</p>
+          </div>
+          <div class="era">
+            <span>The return</span>
+            <p>The next path is not gender reversal. It is repair, reciprocity, and embodied co-creation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="shell challenge">
+        <div class="reveal">
+          <h2>Shedding the Armor is the first paid threshold.</h2>
+          <p class="section-copy">A 7-day challenge gives people the first embodied taste without pretending a lifetime pattern can be fixed by a PDF. It creates momentum, community, and readiness for deeper work.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#origin-map">Join the challenge waitlist</a>
+          </div>
+        </div>
+        <div class="challenge-list reveal">
+          <div class="day"><b>1</b><span>Name the armor you still call strength.</span></div>
+          <div class="day"><b>2</b><span>Find where giving replaced nourishment.</span></div>
+          <div class="day"><b>3</b><span>Return to the body before making a decision.</span></div>
+          <div class="day"><b>4</b><span>Practice receiving before crisis forces it.</span></div>
+          <div class="day"><b>5</b><span>Compare your pattern with someone safe.</span></div>
+          <div class="day"><b>6</b><span>Repair one boundary, one ask, one truth.</span></div>
+          <div class="day"><b>7</b><span>Choose the deeper gate: cohort, circle, or facilitator path.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="shell reveal">
+        <h2>This is not another men's movement. It is the beginning of relational repair.</h2>
+        <p>Men need rites of passage again. Boys need maps. Women need the masculine to heal without making the feminine carry the labor. Facilitators need a clean, ethical architecture for holding the work at scale.</p>
+        <div class="cta-row" style="justify-content: center;">
+          <a class="btn btn-primary" href="#origin-map">Unlock the Origin Map</a>
+          <a class="btn btn-secondary" href="mailto:rick@quicklaunchconsulting.com?subject=Sacred%20Sovereign%20Rising%20Facilitator%20Path">Ask about facilitator training</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>Sacred Sovereign Rising</span>
+      <span>A living framework for awareness, reciprocity, and choice.</span>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.querySelector("#signup");
+    const success = document.querySelector("#success");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      success.style.display = "block";
+      form.querySelector("button").textContent = "Origin Map request received";
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach((item) => observer.observe(item));
+  </script>
+</body>
+</html>
